@@ -1,7 +1,6 @@
 
 # Welcome to Jerbil, the developer-friendly website builder
 
-This package `jerbil-website` provides an npm wrapper for using Jerbil
- + template files for a standard jerbil project.
+This package `jerbil-cms` provides an npm wrapper for using Jerbil.
 
-TODO split out the template files into their own project.
+Fork `jerbil-website` to get started with some template files for a standard jerbil project.
