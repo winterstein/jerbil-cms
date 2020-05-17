@@ -1,6 +1,6 @@
 {
   "name": "jerbil-cms",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Jerbil is a simple CMS that applies html templates to markdown text files. Its a nice easy way to make websites.",
   "bin": {
     "jerbil": "bin/jerbil.js"
