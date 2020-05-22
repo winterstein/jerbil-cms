@@ -30,10 +30,11 @@ const ocmd = "java -jar "+jarFile+" "+args.join(" ");
 const jarExists = fs.existsSync(jarFile);
 
 if ( ! jarExists || args[0]==="-update" || args[0]==="--update") {
-	console.log("Downloading latest "+jar+"...");
+	const url = "https://www.winterwell.com/software/downloads/"+jar;
+	console.log("Downloading latest "+jar+" from "+url+" ...");
 	// cross-platform download -- sadly not as 100% reliable as wget
 	const file = fs.createWriteStream(jarFile);
-	const request = https.get("https://www.winterwell.com/software/downloads/"+jar, function(response) {
+	const request = https.get(url, function(response) {
 		  let rp = response.pipe(file);
 		  // TODO process the pipe and detect "all done"
 		//   console.log("...Download complete. "+Object.keys(rp));
